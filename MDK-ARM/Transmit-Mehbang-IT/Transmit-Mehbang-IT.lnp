@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"transmit-mehbang-it\startup_stm32f103xb.o"
+"transmit-mehbang-it\main.o"
+"transmit-mehbang-it\gpio.o"
+"transmit-mehbang-it\dma.o"
+"transmit-mehbang-it\tim.o"
+"transmit-mehbang-it\usart.o"
+"transmit-mehbang-it\stm32f1xx_it.o"
+"transmit-mehbang-it\stm32f1xx_hal_msp.o"
+"transmit-mehbang-it\stm32f1xx_hal_gpio_ex.o"
+"transmit-mehbang-it\stm32f1xx_hal_tim.o"
+"transmit-mehbang-it\stm32f1xx_hal_tim_ex.o"
+"transmit-mehbang-it\stm32f1xx_hal.o"
+"transmit-mehbang-it\stm32f1xx_hal_rcc.o"
+"transmit-mehbang-it\stm32f1xx_hal_rcc_ex.o"
+"transmit-mehbang-it\stm32f1xx_hal_gpio.o"
+"transmit-mehbang-it\stm32f1xx_hal_dma.o"
+"transmit-mehbang-it\stm32f1xx_hal_cortex.o"
+"transmit-mehbang-it\stm32f1xx_hal_pwr.o"
+"transmit-mehbang-it\stm32f1xx_hal_flash.o"
+"transmit-mehbang-it\stm32f1xx_hal_flash_ex.o"
+"transmit-mehbang-it\stm32f1xx_hal_exti.o"
+"transmit-mehbang-it\stm32f1xx_hal_uart.o"
+"transmit-mehbang-it\system_stm32f1xx.o"
+--strict --scatter "Transmit-Mehbang-IT\Transmit-Mehbang-IT.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Transmit-Mehbang-IT.map" -o Transmit-Mehbang-IT\Transmit-Mehbang-IT.axf
